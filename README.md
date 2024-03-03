@@ -1,2 +1,2 @@
-# thetourpage.com
+# thetourpage
 tours
