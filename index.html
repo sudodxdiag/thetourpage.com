@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8" />
+
+        <!-- Script for drop down -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+        <script>
+            $(document).ready(function(){
+                function alignModal(){
+                    var modalDialog = $(this).find(".modal-dialog");
+                    
+                    // Applying the top margin on modal to align it vertically center
+                    modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+                }
+                // Align modal when it is displayed
+                $(".modal").on("shown.bs.modal", alignModal);
+                
+                // Align modal when user resize the window
+                $(window).on("resize", function(){
+                    $(".modal:visible").each(alignModal);
+                });   
+            });
+                </script>
+        
+    
+        <!-- Script for drop down -->
+        
+        <script src="assets/vendor/jquery/jquery.min.js"></script>
+        <script src="assets/vendor/jquery.appear/jquery.appear.min.js"></script>
+        <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="assets/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+        <script src="assets/vendor/popper/umd/popper.min.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/vendor/common/common.min.js"></script>
+        <script src="assets/vendor/jquery.validation/jquery.validate.min.js"></script>
+       
+        <script src="assets/vendor/lazysizes/lazysizes.min.js"></script>
+        <script src="assets/vendor/isotope/jquery.isotope.min.js"></script>
+        <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2">
+        <link rel="stylesheet" href="assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2">
+        <link rel="stylesheet" href="assets/vendor/animate/animate.compat.css">
+        <link rel="stylesheet" href="assets/css/icons/css/import-icons.css">
+
+        <!-- <link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css"> -->
+        <link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.css">
+        <link rel="stylesheet" property="stylesheet" type="text/css" href="css/style-old.css" />
+        <link rel="stylesheet" property="stylesheet" type="text/css" href="css/all.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="assets/css/toastr.css">
+        <link rel="stylesheet" href="assets/css/theme.css">
+        <link rel="stylesheet" href="assets/css/theme-elements.css">
+        <link rel="stylesheet" href="assets/css/theme-blog.css">
+
+        <!-- New CSS -->
+        <link rel="stylesheet" property="stylesheet" type="text/css" href="css/style.css" />
+
+        <!-- Skin CSS -->
+        <link rel="stylesheet" href="assets/css/skins/default.css">
+    
+        <!-- Theme Custom CSS -->
+        <link rel="stylesheet" href="assets/css/custom.css?d=20231228141101">
+    
+        <!-- Head Libs -->
+        <script src="assets/vendor/modernizr/modernizr.min.js"></script>
+
+
+
+          
+
+    <link rel='stylesheet' id='wanderers-mkdf-tours-style-css' href='wp-content/plugins/mkdf-tours/assets/css/tours.min.css?ver=6.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='wanderers-mkdf-modules-responsive-css' href='wp-content/themes/wanderers/assets/css/modules-responsive.min.css?ver=6.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='wanderers-mkdf-tours-responsive-style-css' href='wp-content/plugins/mkdf-tours/assets/css/tours-responsive.min.css?ver=6.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='nouislider-css' href='wp-content/plugins/mkdf-tours/assets/css/nouislider.min.css?ver=6.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='rs-plugin-settings-css' href='wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.4.11' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='wanderer-css' href='wp-content/themes/wanderers/assets/css/bootstrap.css?ver=1.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='mkdf-core-dashboard-style-css' href='wp-content/plugins/mkdf-core/core-dashboard/assets/css/core-dashboard.min.css?ver=6.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.6.0' type='text/css' media='all' />
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js" id="wanderers-mikado-membership-google-plus-api-js"></script>
+    <script type="text/javascript" src="wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <script type="text/javascript" src="wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.4.8" id="tp-tools-js"></script>
+    <script type="text/javascript" src="wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.4.11" id="revmin-js"></script>
+    <link rel="https://api.w.org/" href="wp-json/" />
+    <link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/4330" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.4.2" />
+    <link rel='shortlink' href='' />
+    <link rel="alternate" type="application/json+oembed" href="" />
+    <link rel="alternate" type="text/xml+oembed" href="" />
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+    <meta name="generator" content="Powered by Slider Revolution 6.4.11 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+    <script type="text/javascript">
+        function setREVStartSize(e) {
+            //window.requestAnimationFrame(function() {				 
+            window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+            window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+            try {
+                var pw = document.getElementById(e.c).parentNode.offsetWidth,
+                    newh;
+                pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
+                e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+                e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+                e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+                e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+                e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+                e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+                e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+                if (e.layout === "fullscreen" || e.l === "fullscreen")
+                    newh = Math.max(e.mh, window.RSIH);
+                else {
+                    e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                    for (var i in e.rl)
+                        if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+                    e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+                    e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+                    for (var i in e.rl)
+                        if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+                    var nl = new Array(e.rl.length),
+                        ix = 0,
+                        sl;
+                    e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+                    e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+                    e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+                    e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+                    for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+                    sl = nl[0];
+                    for (var i in nl)
+                        if (sl > nl[i] && nl[i] > 0) {
+                            sl = nl[i];
+                            ix = i;
+                        }
+                    var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+                    newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+                }
+                if (window.rs_init_css === undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));
+                document.getElementById(e.c).height = newh + "px";
+                window.rs_init_css.innerHTML += "#" + e.c + "_wrapper { height: " + newh + "px }";
+            } catch (e) {
+                console.log("Failure at Presize of Slider:" + e)
+            }
+            //});
+        };
+    </script>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rsslatest.xml" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "In what vehicles are Global link Tours  conducted?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All tours are conducted in comfortable air-conditioned vehicles. The vehicle type and size will vary depending on the size of your traveling party."
+                }
+            }, {
+                "@type": "Question",
+                "name": "Will our guide be dining with us?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Generally, no - most guests enjoy their private time for meals. However, our guides are of such a caliber that they often become more like highly knowledgeable friends, and you are naturally welcome to invite your guide to share a meal with you if you so wish."
+                }
+            }, {
+                "@type": "Question",
+                "name": "Can tour days be switched out?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes - mainly when bad weather imposes on your activities. Should that be the case, you may substitute the itinerary with one less weather-dependent."
+                }
+            }, {
+                "@type": "Question",
+                "name": "What is the best tourist destination in Tanzania?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Zanzibar is the cream of Tanzania? tourist destinations. No other city or town in the country offers the same wealth of activities and attractions."
+                }
+            }, {
+                "@type": "Question",
+                "name": "Are any tour activities scheduled?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Clients can enjoy most activities at any time of the day. But specific tours - like Zanzibar Island, for example - have set times."
+                }
+            }, {
+                "@type": "Question",
+                "name": "What if I have a particular interest, like bird watching or rock art?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Should you opt for one of our special interest tours or special interests like professional photography, birding, or even history, we will match you with a guide to enhance your experience."
+                }
+            }, {
+                "@type": "Question",
+                "name": "Do you have guides that speak foreign languages?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We would never dream of limiting our services to English-speaking visitors only. Depending on the prevalence of the language and the availability of guides, additional fees may apply if we have to outsource a translator."
+                }
+            }, {
+                "@type": "Question",
+                "name": "I have already booked my hotel. Do you offer guided tours when your company did not make the accommodation arrangements? ",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It mainly depends on the availability of guides. Guests booking complete private tour packages with theTOURpage will naturally take preference."
+                }
+            }, {
+                "@type": "Question",
+                "name": "What about tipping?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tipping is absolutely at your discretion. What may seem a negligible sum for you might be a fortune for another traveler, or vice versa, so tip according to your budget. Additionally, remember that gratuity is not a right - if you find the service lacking, be sure to communicate this to us."
+                }
+            }]
+        }
+    </script>
+
+   
+
+
+
+</head>
+
+
+
+<!--Start of Tawk.to Script-->
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-057aec68-e4f7-487c-b61c-d3957dbe06c2" data-elfsight-app-lazy></div>   
+
+<!--End of Tawk.to Script-->
+
+
+
+<body>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPDFHG2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+<header id="header" class="header-transparent header-effect-shrink header-container-height-xs" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': false, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 65}">
+
+    <div class="header-body border-top-0 box-shadow " >
+        <div class="header-container container flex-column p-0">
+            <div class="header-row">
+                <div class="header-column">
+                    <div class="header-row">
+                        <div class="header-logo">
+                            <a href="">
+                            <img alt="theTOURpage" width="100" height="70" data-sticky-width="100" data-sticky-height="70" id="logo-white" data-sticky-top="25" src="img/logo/top-logo.png">
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-column justify-content-end">
+                    <div class="header-row">
+                        <div class="header-nav p-0">
+                            <!-- 2 - Aggiungere nel <div> che sugue la classe header-fisso -->
+                            <div class="header-nav-main  header-nav-main-effect-1 header-nav-main-sub-effect-1">
+                                <nav class="collapse">
+                                    <ul class="nav nav-pills" id="mainNav">
+                                        <li class="dropdown dropdown-mega">
+                                            <a class="dropdown-item dropdown-toggle line-custom" href="">
+                                                                                                        All tours														<i class="fas ml-1 fa-angle-down"></i> 
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="dropdown-mega-content">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <span class="dropdown-mega-sub-title green">National Parks Tours</span>
+                                                                <ul class="dropdown-mega-sub-nav">
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                            <span class="titolomenudestinazione">Serengeti National Park</span>
+                                                                            <span class="sottotitolomenudestinazioni">Serengeti National Park is a World Heritage Site teeming with wildlife: over 2 million ungulates, 4000 lions, 1000 leopard, 
+                                                                            550 cheetahs and some 500 bird species inhabit an area close to 15,000 square kilometers in size</span>
+                                                                        </a>
+                                                                    </li>
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                        <span class="titolomenudestinazione">Mikumi National Park</span>
+                                                                        <span class="sottotitolomenudestinazioni">The park is rich in wildlife species like elephant, buffaloes, Impala, Lion, Zebra, Wildbeest, Baboon, warthogs, Hippos, 
+                                                                        baboon and Elands which can be spotted throughout the visit to the park despite the time of the yaer.</span>
+                                                                    </a>
+                                                                    </li>
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                        <span class="titolomenudestinazione">Saadan National Park</span>
+                                                                        <span class="sottotitolomenudestinazioni">Being the only National Park that harbors both marine and terrestrial habitats, Saadani has plenty of marine life and large numbers of wild animals</span>
+                                                                    </a>
+                                                                    </li>
+
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                            <span class="titolomenudestinazione">Ruaha National Park</span>
+                                                                            <span class="sottotitolomenudestinazioni">The park has a large number of biggest elephants and all other big four animals like Lions, leopards and buffalos</span>
+                                                                        </a>
+                                                                    </li>
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                            <span class="titolomenudestinazione">Lake Manyara National Park</span>
+                                                                            <span class="sottotitolomenudestinazioni">The Park has more than 350 species of birds and it is known for having the tree-climbing lions</span>
+                                                                        </a>
+                                                                    </li>
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                            <span class="titolomenudestinazione">Tarangire National Park</span>
+                                                                            <span class="sottotitolomenudestinazioni">
+                                                                                The park is popular and famous for its large elephants found along the life-line mainly River Tarangire which flows during the dry season 
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                 
+                                                                </ul>
+
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <span class="dropdown-mega-sub-title green">Mountain Climbing Tours</span>
+
+                                                                <ul class="dropdown-mega-sub-nav">
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                        <span class="titolomenudestinazione">Mount Kilimanjaro</span>
+                                                                        <span class="sottotitolomenudestinazioni">It is the highest mountain in Africa and the highest single free-standing mountain above sea level in the world, having 5,895 m (19,341 ft) above sea level</span>
+                                                                    </a>
+                                                                    </li>
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                        <span class="titolomenudestinazione">Mount Meru</span>
+                                                                        <span class="sottotitolomenudestinazioni">It is the second-highest mountain in Tanzania, after Mount Kilimanjaro. Mount Meru is also the highest mountain/point in Arusha Region</span>
+                                                                    </a>
+                                                                    </li>
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                        <span class="titolomenudestinazione">Udzungwa Mountains</span>
+                                                                        <span class="sottotitolomenudestinazioni">Udzungwa Mountains rise up steeply from the western edge of the Selous Game Reserve. Vervet monkeys play high in in the forest canopy, and small forest antelopes 
+                                                                        can be viewed at the right time of the day.</span>
+                                                                    </a>
+                                                                    </li>
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                        <span class="titolomenudestinazione">Usambara Mountains</span>
+                                                                        <span class="sottotitolomenudestinazioni">these mountains offer a captivating landscape with their western and eastern ranges divided by a picturesque valley dotted with small villages and farms</span>
+                                                                    </a>
+                                                                    </li>
+
+                                                                </ul>
+
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <span class="dropdown-mega-sub-title green">Zanzibar Island Tours</span>
+
+                                                                <ul class="dropdown-mega-sub-nav">
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                    <span class="titolomenudestinazione">Safari Blue Trip</span>
+                                                                    <span class="sottotitolomenudestinazioni">If you love ocean, this tour for you. You will witness countless colourful fishes and other sea creatures that survive among the coral reefs and underwater plants 
+                                                                    </span>
+                                                                </a>
+                                                                    </li>
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                    <span class="titolomenudestinazione">Spice Tour</span>
+                                                                    <span class="sottotitolomenudestinazioni">On this three hours guided tour, you will explore the various spices of Zanzibar which are used in almost every kitchen on earth, such as cinnamon, cloves, black pepper, garlic, lemongrass, 
+                                                                    turmeric, ginger, vanilla, nutmeg, and more.</span>
+                                                                </a>
+                                                                    </li>
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                    <span class="titolomenudestinazione">Stone Town Tour</span>
+                                                                    <span class="sottotitolomenudestinazioni">Stone town tour in Zanzibar is a 3 hours walking tour around the ancient town which will take you through the historical sites, bazaar streets, 
+                                                                    curio shops and other areas of historical Zanzibar Stone town</span>
+                                                                </a>
+                                                                    </li>
+
+                                                                    <li><a class="dropdown-item-regioni" href="">
+                                                                        <span class="titolomenudestinazione">Prison Island Tour</span>
+                                                                        <span class="sottotitolomenudestinazioni">In Prison Island tour, you will get a chance to explore and learn the history of the giant tortoises and also about Prison Island itself.</span>
+                                                                    </a>
+                                                                        </li>
+
+                                                                </ul>
+                                                            
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="dropdown dropdown-mega">
+                                            <a class="dropdown-item dropdown-toggle line-custom" href="">
+                                                                        About us										<i class="fas ml-1 fa-angle-down"></i> 
+                                            </a>
+                                            <ul class="dropdown-menu ">
+                                                <li>
+                                                    <div class="dropdown-mega-content">
+                                             
+                                                    <span class="dropdown-mega-sub-title green">THE TOURPAGE.COM</span>
+                                                    <ul class="list-unstyled mb-0" id="artmenu_cont">
+                                                            The Tourpage.com, is a registerd private company specializing in adventure travel in Tanzania. The company was founded by Alex Kibiki and it has helped fellow travelers explore and experience some of the most amazing places and cultures in Tanzania.
+
+                                                            ​Our dedicated team of professionals has one goal, to provide the best and most memorable adventure experience for you! Our staff takes the upmost care in arranging your tours and ensuring everything goes as planned. We pride ourselves in customer care and attention to detail.
+                                                            
+                                                            ​We believe travelers deserve a company that shares their passion for adventure. Our team has a wealth of local knowledge of the land, culture and the biodiversity of Tanzania they are willing to share with you. We hope that this will be the start of a very exciting journey for you and we welcome you to discover Tanzania with us.
+                                                    </ul>  
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+                                        <li>
+                                            <a class="dropdown-item line-custom" href="">
+                                                                                Contact Us									</a>
+                                        </li>
+                    
+                                    </ul>
+                                </nav>
+                                </div>
+                            </div>
+                        
+                        
+            <button id="searchbutton" class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav" aria-expanded="true">
+                <i class="fas fa-bars" style="font-size: 17px;"></i>
+            </button>
+    
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="list-unstyled mb-0 box-ricerca" id="ricerca_cont">
+
+            </ul>
+
+        </div>
+    </div>
+    </header>
+                 <div class="mkdf-content">
+                    <div class="mkdf-content-inner">
+                         <div class="mkdf-full-width">
+                                <div class="mkdf-full-width-inner">
+                                <div class="mkdf-grid-row">
+                                <div class="mkdf-page-content-holder mkdf-grid-col-12">
+                                <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                        
+                                                <!-- START Slider 1 1 REVOLUTION SLIDER 6.4.11 -->
+                                                <p class="rs-p-wp-fix"></p>
+                                                <rs-module-wrap id="rev_slider_10_1_wrapper" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+                                                    <rs-module id="rev_slider_10_1" data-version="6.4.11">
+
+                                                        <rs-arrow style="opacity: 1; transform: translate(30px, -20px); top: 50%; left: 0px;" class="tp-leftarrow tparrows hesperiden"></rs-arrow>
+                                                        <rs-arrow style="opacity: 1; transform: translate(-70px, -20px); top: 50%; left: 100%;" class="tp-rightarrow tparrows hesperiden"></rs-arrow>
+
+
+                                                        <rs-slides>
+                                                    
+                                                            <rs-slide data-key="rs-22" data-title="Slide" data-thumb="" data-anim="ms:2000;" data-in="o:0;" data-out="a:false;" data-d3="f:fly;d:vertical;z:700;t:-40;e:power2.out;su:true;">
+                                                                <img decoding="async" src="img/bg-main1.jpg" alt="Cheetah Safari" title="Cheetah Safari" width="1920" height="880" class="rev-slidebg tp-rs-img" data-no-retina>
+                                                                <!--
+                        -->
+                                                                <rs-layer id="slider-10-slide-22-layer-5" data-type="text" data-color="#ffffff" data-rsp_ch="on" data-xy="x:181px;y:757px;" data-text="w:normal;s:70;l:70;ls:-1;fw:500;" data-dim="minh:0px;"
+                                                                    data-frame_999="o:0;st:w;" style="z-index:5;font-family:Poppins;text-transform:uppercase;">GIRRAFES IN SERENGETI NATIONAL PARK
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-22-layer-19" data-type="text" data-color="#fff" data-rsp_ch="on" data-xy="x:185px;y:822px;" data-text="w:normal;s:30;l:30;ls:1;fw:300;" data-dim="minh:0px;"
+                                                                    data-frame_999="o:0;st:w;" style="z-index:6;font-family:Open Sans;">Serengeti National Park is gifted by nature in the whole of Tanzania and is the home of most Girrafes in Tanzania.
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-19-layer-41" data-type="image" data-rsp_ch="on" data-xy="x:20px;y:757px;" data-text="w:normal;" data-dim="w:150px;h:142px;" data-frame_999="o:0;st:w;" style="z-index:7;"><img decoding="async" src="img/logo/bottom-logo.jpeg" alt="logo" class="tp-rs-img" width="2197" height="2087" data-no-retina>
+                                                                </rs-layer>
+                                                                <!--
+
+                        --><a id="slider-10-slide-22-layer-43" class="rs-layer rev-btn" href="plan-your-safari/" target="_self" data-type="button" data-color="#ffffff" data-rsp_ch="on"
+                                                                    data-xy="x:185px;y:861px;" data-text="w:normal;s:17;l:20;ls:1;" data-dim="minh:0px;" data-padding="t:12;r:35;b:12;l:35;" data-border="bor:30px,30px,30px,30px;" data-frame_999="o:0;st:w;"
+                                                                    data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;" style="z-index:8;background-color:#03a84e;font-family:Roboto;text-transform:uppercase;">PLAN YOUR SAFARI <i class="fa-chevron-right"></i> 
+                        </a>
+                                                                <!--
+-->
+                                                            </rs-slide>
+                                                            <rs-slide data-key="rs-20" data-title="Slide" data-thumb="" data-anim="ms:2000;" data-in="o:0;" data-out="a:false;" data-d3="f:turn;su:true;">
+                                                                <img loading="lazy" decoding="async" src="img/bg-main2.jpg" alt="Kenya Big Five Safari" title="Kenya Big Five Safari" width="1920" height="800" class="rev-slidebg tp-rs-img" data-no-retina>
+                                                                <!--
+                        -->
+                                                                <rs-layer id="slider-10-slide-20-layer-7" data-type="text" data-color="#fff" data-rsp_ch="on" data-xy="x:186px;y:750px;" data-text="w:normal;s:70;l:70;ls:-1;fw:500;" data-dim="minh:0px;"
+                                                                    data-frame_999="o:0;st:w;" style="z-index:5;font-family:Poppins;text-transform:uppercase;">KILIMANJARO SUN RISE
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-20-layer-9" data-type="text" data-color="#fff" data-rsp_ch="on" data-xy="x:189px;y:812px;" data-text="w:normal;s:30;l:24;fw:500;" data-dim="minh:0px;" data-frame_999="o:0;st:w;"
+                                                                    style="z-index:6;font-family:Roboto;">Explore different mountains climbing in Tanzania, from Kilimanjaro mountains to others.
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-19-layer-41" data-type="image" data-rsp_ch="on" data-xy="x:20px;y:757px;" data-text="w:normal;" data-dim="w:150px;h:142px;" data-frame_999="o:0;st:w;" style="z-index:7;"><img decoding="async" src="img/logo/bottom-logo.jpeg" alt="logo" class="tp-rs-img" width="2197" height="2087" data-no-retina>
+                                                                </rs-layer>
+                                                                <!--
+
+                        --><a id="slider-10-slide-20-layer-45" class="rs-layer rev-btn" href="plan-your-safari/" target="_self" data-type="button" data-color="#ffffff" data-rsp_ch="on"
+                                                                    data-xy="x:185px;y:845px;" data-text="w:normal;s:17;l:20;ls:1;" data-dim="minh:0px;" data-padding="t:12;r:35;b:12;l:35;" data-border="bor:30px,30px,30px,30px;" data-frame_999="o:0;st:w;"
+                                                                    data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;" style="z-index:8;background-color:#03a84e;font-family:Roboto;text-transform:uppercase;">PLAN YOUR SAFARI <i class="fa-chevron-right"></i> 
+                        </a>
+                                                                <!--
+-->
+                                                            </rs-slide>
+                                                            <rs-slide data-key="rs-33" data-title="Slide" data-thumb="" data-anim="ms:2000;" data-in="o:0;" data-out="a:false;" data-d3="f:cube;d:vertical;z:400;su:true;sma:1;">
+                                                                <img loading="lazy" decoding="async" src="img/bg-main3.jpg" alt="Martin Njite On the Right: Safari Manager" title="Martin Njite" width="1444" height="964" class="rev-slidebg tp-rs-img" data-no-retina>
+                                                                <!--
+                        -->
+                                                                <rs-layer id="slider-10-slide-33-layer-12" data-type="text" data-color="#fff" data-rsp_ch="on" data-xy="x:181px;y:752px;" data-text="w:normal;s:70;l:70;ls:-1;fw:500;" data-dim="minh:0px;"
+                                                                    data-frame_999="o:0;st:w;" style="z-index:5;font-family:Poppins;text-transform:uppercase;">ELEPHANT IN TARANGIRE NATIONAL PARK
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-33-layer-14" data-type="text" data-color="#fff" data-rsp_ch="on" data-xy="x:178px;y:817px;" data-text="w:normal;s:30;l:30;ls:1;fw:300;" data-dim="minh:0px;"
+                                                                    data-frame_999="o:0;st:w;" style="z-index:7;font-family:Open Sans;">Experience the largest creatures life style in Tanzania, Tarangire national park is the home of the largest and wonderful elephants
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-19-layer-41" data-type="image" data-rsp_ch="on" data-xy="x:20px;y:757px;" data-text="w:normal;" data-dim="w:150px;h:142px;" data-frame_999="o:0;st:w;" style="z-index:7;"><img decoding="async" src="img/logo/bottom-logo.jpeg" alt="logo" class="tp-rs-img" width="2197" height="2087" data-no-retina>
+                                                                </rs-layer>
+                                                                <!--
+
+                        --><a id="slider-10-slide-33-layer-46" class="rs-layer rev-btn" href="plan-your-safari/" target="_self" data-type="button" data-color="#ffffff" data-rsp_ch="on"
+                                                                    data-xy="x:185px;y:848px;" data-text="w:normal;s:17;l:20;ls:1;" data-dim="minh:0px;" data-padding="t:12;r:35;b:12;l:35;" data-border="bor:30px,30px,30px,30px;" data-frame_999="o:0;st:w;"
+                                                                    data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;" style="z-index:8;background-color:#03a84e;font-family:Roboto;text-transform:uppercase;">PLAN YOUR SAFARI <i class="fa-chevron-right"></i> 
+                        </a>
+                                                                <!--
+-->
+                                                            </rs-slide>
+                                                            <rs-slide data-key="rs-34" data-title="Slide" data-thumb="" data-anim="ms:2000;" data-in="o:0;" data-out="a:false;" data-d3="f:turn;d:vertical;su:true;">
+                                                                <img loading="lazy" decoding="async" src="img/bg-main4.jpg" alt="6-Day Experience the Wild Masai Mara Reserve" title="6-Day Experience the Wild Masai Mara Reserve" width="1350" height="555" class="rev-slidebg tp-rs-img"
+                                                                    data-no-retina>
+                                                                <!--
+                        -->
+                                                                <rs-layer id="slider-10-slide-34-layer-15" data-type="text" data-color="#fff" data-rsp_ch="on" data-xy="x:180px;y:751px;" data-text="w:normal;s:70;l:70;ls:-1;fw:500;" data-dim="minh:0px;"
+                                                                    data-frame_999="o:0;st:w;" style="z-index:5;font-family:Poppins;text-transform:uppercase;">PRISON ISLAND TOUR (ZANZIBAR)
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-34-layer-16" data-type="text" data-color="#fff" data-rsp_ch="on" data-xy="x:186px;y:812px;" data-text="w:normal;s:30;l:30;ls:1;fw:300;" data-dim="minh:0px;"
+                                                                    data-frame_999="o:0;st:w;" style="z-index:6;font-family:Open Sans;">Our half day boat trip to Prison Island tours offer the perfect adventure to play with tortoises, swimming and snorkeling.
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-19-layer-41" data-type="image" data-rsp_ch="on" data-xy="x:20px;y:757px;" data-text="w:normal;" data-dim="w:150px;h:142px;" data-frame_999="o:0;st:w;" style="z-index:7;"><img decoding="async" src="img/logo/bottom-logo.jpeg" alt="logo" class="tp-rs-img" width="2197" height="2087" data-no-retina>
+                                                                </rs-layer>
+                                                                <!--
+
+                        --><a id="slider-10-slide-34-layer-47" class="rs-layer rev-btn" href="plan-your-safari/" target="_self" data-type="button" data-color="#ffffff" data-rsp_ch="on"
+                                                                    data-xy="x:185px;y:847px;" data-text="w:normal;s:17;l:20;ls:1;" data-dim="minh:0px;" data-padding="t:12;r:35;b:12;l:35;" data-border="bor:30px,30px,30px,30px;" data-frame_999="o:0;st:w;"
+                                                                    data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;" style="z-index:8;background-color:#03a84e;font-family:Roboto;text-transform:uppercase;">PLAN YOUR SAFARI <i class="fa-chevron-right"></i> 
+                        </a>
+                                                                <!--
+-->
+                                                            </rs-slide>
+                                                            <rs-slide data-key="rs-21" data-title="Slide" data-thumb="" data-anim="ms:2000;" data-in="o:0;" data-out="a:false;" data-d3="f:cube;z:400;su:true;">
+                                                                <img loading="lazy" decoding="async" src="img/bg-main5.jpg" alt="Kenya Big Cat Safari" title="Kenya Big Cat Safari" width="1350" height="550" class="rev-slidebg tp-rs-img" data-no-retina>
+                                                                <!--
+                        -->
+                                                                <rs-layer id="slider-10-slide-21-layer-10" data-type="text" data-color="#fff" data-rsp_ch="on" data-xy="x:182px;y:756px;" data-text="w:normal;s:70;l:70;ls:-1;fw:500;" data-dim="minh:0px;"
+                                                                    data-frame_999="o:0;st:w;" style="z-index:5;font-family:Poppins;text-transform:uppercase;">LAND GIANT TORTOISES (ZANZIBAR)
+                                                                </rs-layer>
+                                                                <!--
+                        -->
+                                                                <rs-layer id="slider-10-slide-34-layer-16" data-type="text" data-color="#fff" data-rsp_ch="on" data-xy="x:186px;y:812px;" data-text="w:normal;s:30;l:30;ls:1;fw:300;" data-dim="minh:0px;"
+                                                                data-frame_999="o:0;st:w;" style="z-index:6;font-family:Open Sans;">See the giant land tortoises of Prison Island, or Changuu Island, on a half-day trip from Zanzibar, with time to swim,snorkeling
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-19-layer-41" data-type="image" data-rsp_ch="on" data-xy="x:20px;y:757px;" data-text="w:normal;" data-dim="w:150px;h:142px;" data-frame_999="o:0;st:w;" style="z-index:7;"><img decoding="async" src="img/logo/bottom-logo.jpeg" alt="logo" class="tp-rs-img" width="2197" height="2087" data-no-retina>
+                                                                </rs-layer>
+                                                                <!--
+
+                        --><a id="slider-10-slide-21-layer-48" class="rs-layer rev-btn" href="plan-your-safari/" target="_self" data-type="button" data-color="#ffffff" data-rsp_ch="on"
+                                                                    data-xy="x:185px;y:846px;" data-text="w:normal;s:17;l:20;ls:1;" data-dim="minh:0px;" data-padding="t:12;r:35;b:12;l:35;" data-border="bor:30px,30px,30px,30px;" data-frame_999="o:0;st:w;"
+                                                                    data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;" style="z-index:8;background-color:#03a84e;font-family:Roboto;text-transform:uppercase;">PLAN YOUR SAFARI <i class="fa-chevron-right"></i> 
+                        </a>
+                                                                <!--
+-->
+                                                            </rs-slide>
+                                                            <rs-slide data-key="rs-35" data-title="Slide" data-thumb="" data-anim="ms:2000;" data-in="o:0;" data-out="a:false;" data-d3="f:turn;e:back.out;su:true;">
+                                                                <img loading="lazy" decoding="async" src="img/bg-main6.jpg" alt="6-day-fd" title="6-day-fd" width="1350" height="682" class="rev-slidebg tp-rs-img" data-no-retina>
+                                                                <!--
+                        -->
+                                                                <rs-layer id="slider-10-slide-35-layer-17" data-type="text" data-color="#ffffff" data-rsp_ch="on" data-xy="x:176px;y:731px;" data-text="w:normal;s:70;l:111;ls:-2;fw:500;" data-frame_999="o:0;st:w;"
+                                                                    style="z-index:7;font-family:Poppins;text-transform:uppercase;">STONE TOWN TOUR IN ZANZIBAR
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-35-layer-18" data-type="text" data-color="#ffffff" data-rsp_ch="on" data-xy="x:185px;y:803px;" data-text="w:normal;s:30;l:52;ls:2;fw:300;" data-frame_999="o:0;st:w;"
+                                                                    style="z-index:8;font-family:Open Sans;">Stone Town is the cultural heart of the island and the old city area of Zanzibar City, located on the western shore.
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-19-layer-41" data-type="image" data-rsp_ch="on" data-xy="x:20px;y:757px;" data-text="w:normal;" data-dim="w:150px;h:142px;" data-frame_999="o:0;st:w;" style="z-index:7;"><img decoding="async" src="img/logo/bottom-logo.jpeg" alt="logo" class="tp-rs-img" width="2197" height="2087" data-no-retina>
+                                                                </rs-layer>
+                                                                <!--
+
+                        --><a id="slider-10-slide-35-layer-49" class="rs-layer rev-btn" href="plan-your-safari/" target="_self" data-type="button" data-color="#ffffff" data-rsp_ch="on"
+                                                                    data-xy="x:182px;y:847px;" data-text="w:normal;s:17;l:20;ls:1;" data-dim="minh:0px;" data-padding="t:12;r:35;b:12;l:35;" data-border="bor:30px,30px,30px,30px;" data-frame_999="o:0;st:w;"
+                                                                    data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;" style="z-index:8;background-color:#03a84e;font-family:Roboto;text-transform:uppercase;">PLAN YOUR SAFARI <i class="fa-chevron-right"></i> 
+                        </a>
+                                                                <!--
+-->
+                                                            </rs-slide>
+                                                            <rs-slide data-key="rs-36" data-title="Slide" data-thumb="" data-anim="ms:2000;" data-in="o:0;" data-out="a:false;" data-d3="f:turn;e:back.out;su:true;">
+                                                                <img loading="lazy" decoding="async" src="img/bg-main7.png" alt="Family Holiday Safaris" title="Family-safari holidays" width="1920" height="670" class="rev-slidebg tp-rs-img" data-no-retina>
+                                                                <!--
+                        -->
+                                                                <rs-layer id="slider-10-slide-36-layer-17" data-type="text" data-color="#ffffff" data-rsp_ch="on" data-xy="x:172px;y:729px;" data-text="w:normal;s:70;l:111;ls:-2;fw:500;" data-frame_999="o:0;st:w;"
+                                                                    style="z-index:7;font-family:Poppins;text-transform:uppercase;">FAMILY HOLIDAY GETAWAYS
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-36-layer-18" data-type="text" data-color="#ffffff" data-rsp_ch="on" data-xy="x:175px;y:800px;" data-text="w:normal;s:42;l:52;ls:2;fw:300;" data-frame_999="o:0;st:w;"
+                                                                    style="z-index:8;font-family:Open Sans;">Family Bush & Beach Experiences
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-19-layer-41" data-type="image" data-rsp_ch="on" data-xy="x:20px;y:757px;" data-text="w:normal;" data-dim="w:150px;h:142px;" data-frame_999="o:0;st:w;" style="z-index:7;"><img decoding="async" src="img/logo/bottom-logo.jpeg" alt="logo" class="tp-rs-img" width="2197" height="2087" data-no-retina>
+                                                                </rs-layer>
+                                                                <!--
+
+                        --><a id="slider-10-slide-36-layer-50" class="rs-layer rev-btn" href="plan-your-safari/" target="_self" data-type="button" data-color="#ffffff" data-rsp_ch="on"
+                                                                    data-xy="x:175px;y:857px;" data-text="w:normal;s:17;l:20;ls:1;" data-dim="minh:0px;" data-padding="t:12;r:35;b:12;l:35;" data-border="bor:30px,30px,30px,30px;" data-frame_999="o:0;st:w;"
+                                                                    data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;" style="z-index:8;background-color:#03a84e;font-family:Roboto;text-transform:uppercase;">PLAN YOUR SAFARI <i class="fa-chevron-right"></i> 
+                        </a>
+                                                                <!--
+-->
+                                                            </rs-slide>
+                                                            <rs-slide data-key="rs-37" data-title="Slide" data-thumb="" data-anim="ms:2000;" data-in="o:0;" data-out="a:false;" data-d3="f:turn;e:back.out;su:true;">
+                                                                <img loading="lazy" decoding="async" src="img/bg-main8.jpg" alt="Single Traveller" title="single-traveler-banner" width="1920" height="670" class="rev-slidebg tp-rs-img" data-no-retina>
+                                                                <!--
+                        -->
+                                                            <rs-layer id="slider-10-slide-19-layer-41" data-type="image" data-rsp_ch="on" data-xy="x:20px;y:757px;" data-text="w:normal;" data-dim="w:150px;h:142px;" data-frame_999="o:0;st:w;" style="z-index:7;"><img decoding="async" src="img/logo/bottom-logo.jpeg" alt="logo" class="tp-rs-img" width="2197" height="2087" data-no-retina>
+                                                            </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-37-layer-17" data-type="text" data-color="#ffffff" data-rsp_ch="on" data-xy="x:183px;y:728px;" data-text="w:normal;s:70;l:111;ls:-2;fw:500;" data-frame_999="o:0;st:w;"
+                                                                    style="z-index:7;font-family:Poppins;text-transform:uppercase;">Single Traveler Safaris
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-37-layer-18" data-type="text" data-color="#ffffff" data-rsp_ch="on" data-xy="x:182px;y:803px;" data-text="w:normal;s:42;l:52;ls:2;fw:300;" data-frame_999="o:0;st:w;"
+                                                                    style="z-index:8;font-family:Open Sans;">Single Traveler's Bush Escape Tours
+                                                                </rs-layer>
+                                                                <!--
+
+                        --><a id="slider-10-slide-37-layer-51" class="rs-layer rev-btn" href="plan-your-safari/" target="_self" data-type="button" data-color="#ffffff" data-rsp_ch="on"
+                                                                    data-xy="x:181px;y:858px;" data-text="w:normal;s:17;l:20;ls:1;" data-dim="minh:0px;" data-padding="t:12;r:35;b:12;l:35;" data-border="bor:30px,30px,30px,30px;" data-frame_999="o:0;st:w;"
+                                                                    data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;" style="z-index:8;background-color:#03a84e;font-family:Roboto;text-transform:uppercase;">PLAN YOUR SAFARI <i class="fa-chevron-right"></i> 
+                        </a>
+                                                                <!--
+-->
+                                                            </rs-slide>
+                                                            <rs-slide data-key="rs-38" data-title="Slide" data-thumb="" data-anim="ms:2000;" data-in="o:0;" data-out="a:false;" data-d3="f:turn;e:back.out;su:true;">
+                                                                <img loading="lazy" decoding="async" src="img/bg-main9.jpg" alt="Honeymoon safari tours" title="couples-banner" width="1920" height="670" class="rev-slidebg tp-rs-img" data-no-retina>
+                                                                <!--
+                        -->
+                                                                <rs-layer id="slider-10-slide-38-layer-17" data-type="text" data-color="#ffffff" data-rsp_ch="on" data-xy="x:183px;y:729px;" data-text="w:normal;s:70;l:111;ls:-2;fw:500;" data-frame_999="o:0;st:w;"
+                                                                    style="z-index:7;font-family:Poppins;text-transform:uppercase;">Honeymoon celebration tours
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-38-layer-18" data-type="text" data-color="#ffffff" data-rsp_ch="on" data-xy="x:184px;y:802px;" data-text="w:normal;s:42;l:52;ls:2;fw:300;" data-frame_999="o:0;st:w;"
+                                                                    style="z-index:8;font-family:Open Sans;">Get Romantic Beach & Bush Celebration Safari Package
+                                                                </rs-layer>
+                                                                <!--
+
+                        -->
+                                                                <rs-layer id="slider-10-slide-19-layer-41" data-type="image" data-rsp_ch="on" data-xy="x:20px;y:757px;" data-text="w:normal;" data-dim="w:150px;h:142px;" data-frame_999="o:0;st:w;" style="z-index:7;"><img decoding="async" src="img/logo/bottom-logo.jpeg" alt="logo" class="tp-rs-img" width="2197" height="2087" data-no-retina>
+                                                                </rs-layer>
+                                                                <!--
+
+                        --><a id="slider-10-slide-38-layer-52" class="rs-layer rev-btn" href="plan-your-safari/" target="_self" data-type="button" data-color="#ffffff" data-rsp_ch="on"
+                                                                    data-xy="x:182px;y:850px;" data-text="w:normal;s:17;l:20;ls:1;" data-dim="minh:0px;" data-padding="t:12;r:35;b:12;l:35;" data-border="bor:30px,30px,30px,30px;" data-frame_999="o:0;st:w;"
+                                                                    data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;" style="z-index:8;background-color:#03a84e;font-family:Roboto;text-transform:uppercase;">PLAN YOUR SAFARI <i class="fa-chevron-right"></i> 
+                        </a>
+                                                                <!--
+-->
+                                                            </rs-slide>
+                                          
+                                                        </rs-slides>
+                                                    </rs-module>
+                                                    <script type="text/javascript">
+                                                        setREVStartSize({
+                                                            c: 'rev_slider_10_1',
+                                                            rl: [1240, 1024, 778, 480],
+                                                            el: [970],
+                                                            gw: [1920],
+                                                            gh: [970],
+                                                            type: 'standard',
+                                                            justify: '',
+                                                            layout: 'fullwidth',
+                                                            mh: "0"
+                                                        });
+                                                        var revapi10,
+                                                            tpj;
+
+                                                        function revinit_revslider101() {
+                                                            jQuery(function() {
+                                                                tpj = jQuery;
+                                                                revapi10 = tpj("#rev_slider_10_1");
+                                                                if (revapi10 == undefined || revapi10.revolution == undefined) {
+                                                                    revslider_showDoubleJqueryError("rev_slider_10_1");
+                                                                } else {
+                                                                    revapi10.revolution({
+                                                                        DPR: "dpr",
+                                                                        sliderLayout: "fullwidth",
+                                                                        visibilityLevels: "1240,1024,778,480",
+                                                                        gridwidth: 1920,
+                                                                        gridheight: 970,
+                                                                        perspective: 600,
+                                                                        perspectiveType: "global",
+                                                                        editorheight: "970,768,960,720",
+                                                                        responsiveLevels: "1240,1024,778,480",
+                                                                        progressBar: {
+                                                                            size: 5,
+                                                                            x: 0,
+                                                                            y: 0
+                                                                        },
+                                                                        navigation: {
+                                                                            wheelCallDelay: 1000,
+                                                                            onHoverStop: false,
+                                                                            arrows: {
+                                                                                enable: true,
+                                                                                style: "hesperiden",
+                                                                                left: {
+                                                                                    h_offset: 30
+                                                                                },
+                                                                                right: {
+                                                                                    h_offset: 30
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        scrolleffect: {
+                                                                            set: true,
+                                                                            multiplicator: 1.3,
+                                                                            multiplicator_layers: 1.3
+                                                                        },
+                                                                        fallbacks: {
+                                                                            allowHTML5AutoPlayOnAndroid: true
+                                                                        },
+                                                                    });
+                                                                }
+
+                                                            });
+                                                        } // End of RevInitScript
+                                                        var once_revslider101 = false;
+                                                        if (document.readyState === "loading") {
+                                                            document.addEventListener('readystatechange', function() {
+                                                                if ((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider101) {
+                                                                    once_revslider101 = true;
+                                                                    revinit_revslider101();
+                                                                }
+                                                            });
+                                                        } else {
+                                                            once_revslider101 = true;
+                                                            revinit_revslider101();
+                                                        }
+                                                    </script>
+                                                    <script>
+                                                        var htmlDivCss = unescape("%23rev_slider_10_1_wrapper%20.hesperiden.tparrows%20%7B%0A%09cursor%3Apointer%3B%0A%09background%3Argba%280%2C0%2C0%2C0.5%29%3B%0A%09width%3A40px%3B%0A%09height%3A40px%3B%0A%09position%3Aabsolute%3B%0A%09display%3Ablock%3B%0A%09z-index%3A1000%3B%0A%20%20%20%20border-radius%3A%2050%25%3B%0A%7D%0A%23rev_slider_10_1_wrapper%20.hesperiden.tparrows.rs-touchhover%20%7B%0A%09background%3A%23000000%3B%0A%7D%0A%23rev_slider_10_1_wrapper%20.hesperiden.tparrows%3Abefore%20%7B%0A%09font-family%3A%20%27revicons%27%3B%0A%09font-size%3A20px%3B%0A%09color%3A%23ffffff%3B%0A%09display%3Ablock%3B%0A%09line-height%3A%2040px%3B%0A%09text-align%3A%20center%3B%0A%7D%0A%23rev_slider_10_1_wrapper%20.hesperiden.tparrows.tp-leftarrow%3Abefore%20%7B%0A%09content%3A%20%27%5Ce82c%27%3B%0A%20%20%20%20margin-left%3A-3px%3B%0A%7D%0A%23rev_slider_10_1_wrapper%20.hesperiden.tparrows.tp-rightarrow%3Abefore%20%7B%0A%09content%3A%20%27%5Ce82d%27%3B%0A%20%20%20%20margin-right%3A-3px%3B%0A%7D%0A");
+                                                        var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+                                                        if (htmlDiv) {
+                                                            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                                        } else {
+                                                            var htmlDiv = document.createElement('div');
+                                                            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+                                                            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+                                                        }
+                                                    </script>
+                                                    <script>
+                                                        var htmlDivCss = unescape("%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A");
+                                                        var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+                                                        if (htmlDiv) {
+                                                            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                                        } else {
+                                                            var htmlDiv = document.createElement('div');
+                                                            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+                                                            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+                                                        }
+                                                    </script>
+                                                </rs-module-wrap>
+                                                <!-- END REVOLUTION SLIDER -->
+                                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                                    <div class="wpb_column vc_column_container vc_col-sm-3">
+                                                        <div class="vc_column-inner">
+                                                            <div class="wpb_wrapper"></div>
+                                                        </div>
+                                                    </div>
+                                    
+                                                </div>
+                                            </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+                             
+                                <div class="vc_row-full-width vc_clearfix"></div>
+
+                                <div class="vc_row-full-width vc_clearfix"></div>
+                            </div>
+                            <div class="mkdf-sidebar-holder">
+                                <aside class="mkdf-sidebar">
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                </div>
+            <!-- close div.content_inner -->
+                </div>
+            <!-- close div.content -->
+
+
+<!--End of Tawk.to Script (0.7.2)-->
+
+    <script>
+        ! function() {
+            window.advanced_ads_ready_queue = window.advanced_ads_ready_queue || [], advanced_ads_ready_queue.push = window.advanced_ads_ready;
+            for (var d = 0, a = advanced_ads_ready_queue.length; d < a; d++) advanced_ads_ready(advanced_ads_ready_queue[d])
+        }();
+    </script>
+
+    </div>
+
+    <div>
+        <div id="tourList">
+            <div class="tour-page" id="tour-page1">
+                <div class="pkg-box-wrapper">
+                        <div class="pkg-box-pic">
+                            <ul class="pkg-pic-countries">
+                                <li>Tanzania Mainland</li>
+                            </ul>
+                            <a href=""> <img src="img/bottom-part/Mountain-climbing11.webp" data-src="" alt="T11-00.jpg" class="hero-image lazyload" style = "width:100%; height:100%;"/></a>
+                        </div>
+                        <div class="pkg-box-text">
+                            <h3><a href="" class="box-heading">Mountain Climbing Tour</a></h3>
+                            <span class="days-2"><b>Location:</b> Tanzania Main land</span>
+                            <span class="days-2"><b>Level:</b> Personal | Family | Group</span>
+                            <span class="days-3">Destinations Visited:</span>
+                            <p class="pkg-dest">Kilimanjaro Mountain | Meru Mountain | Udzungwa Montain | Usambara Mountain </p>
+                            <div class="hide-identity-c" style="margin-top:15px;"> <span class="hide-info-but-c"></span> Read More</div>
+                            <p class="pkg-info hide-identity-c-a">Mountain climbing and hiking in Tanzania offer a rewarding experience as they chllenge you physically, the most popular mountains in 
+                                Tanzania are Kilimanjaro, Meru, Udzungwa and Usambara.. with us you can get the best mountain climbing tours in Tanzania</p>
+                        </div>
+                        <div class="pkg-box-price"><span class="price blue-from"> From</span>
+                            <span class="price pkg-price"> USD XXXX</span>
+                            <span class="price pkg-price-pp"> Per Person Sharing</span>
+                            <div class="pkg-button">
+                                <a href="#mountainClimbingTour" data-toggle="modal">Find Out More</a>
+                            </div>
+                        </div>
+
+
+                        <!-- Modal HTML -->
+                        <div id="mountainClimbingTour" class="modal">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Mountain Climbing Tour</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                            </div>
+                            <div class="modal-body">
+                                <p>TELL ME WHAT TO PUT HERE </p>
+                                <p class="text-primary"><small>TELL ME WHAT TO PUT HERE</small></p>
+                            </div>
+                            <div class="modal-footer">
+                                    
+                                <button type="button" class="btn btn-secondary" color="black" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pkg-box-wrapper">
+                            <div class="pkg-box-pic">
+                                <ul class="pkg-pic-countries">
+                                    <li>Tanzania Mainland</li>
+                                </ul>
+                                <a href=""> <img src="img/bottom-part/national-park.jpg" data-src="" alt="T11-00.jpg" class="hero-image lazyload" style = "width:100%; height:100%;" /></a>
+                            </div>
+                            <div class="pkg-box-text">
+                                <h3><a href="" class="box-heading">National Park Day Trip</a></h3>
+                                <span class="days-2"><b>Location:</b> Tanzania Mainland</span>
+                                <span class="days-2"><b>Level:</b> Personal | Family | Group</span>
+                                <span class="days-3">Destinations Visited:</span>
+                                <p class="pkg-dest">Serengeti National Park | Mikumi National Park | Saadan National Park | Ruaha National Park | Lake Manyara National Park | Tarangire National Park </p>
+                                <div class="hide-identity-c" style="margin-top:15px;"> <span class="hide-info-but-c"></span> Read More</div>
+                                <p class="pkg-info hide-identity-c-a">From much loved Serengeti National Park to little visited Katavi, discover the most visited national parka in Tanzania</p>
+                            </div>
+                            <div class="pkg-box-price"><span class="price blue-from"> From</span>
+                                <span class="price pkg-price"> USD XXXX</span>
+                                <span class="price pkg-price-pp"> Per Person Sharing</span>
+                                <div class="pkg-button">
+                                    <a href="#nationalPark" data-toggle="modal">Find Out More</a>
+                                </div>
+                            </div>
+
+                            <!-- Modal HTML -->
+                        <div id="nationalPark" class="modal">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">National Park Day Trip</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                            </div>
+                            <div class="modal-body">
+                                <p>TELL ME WHAT TO PUT HERE </p>
+                                <p class="text-primary"><small>TELL ME WHAT TO PUT HERE</small></p>
+                            </div>
+                            <div class="modal-footer">
+                                    
+                                <button type="button" class="btn btn-secondary" color="black" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+
+                            <div class="pkg-box-wrapper">
+                                    <div class="pkg-box-pic">
+                                        <ul class="pkg-pic-countries">
+                                
+                                            <li>ZANZIBAR ISLAND</li>
+                                        </ul>
+                                        <a href=""> <img src="img/bottom-part/island.jpg" data-src="" alt="T11-00.jpg" class="hero-image lazyload" style = "width:100%; height:100%;" /></a>
+                                    </div>
+                                    <div class="pkg-box-text">
+                                        <h3><a href="" class="box-heading">Island Boat Trip</a></h3>
+                                        <span class="days-2"><b>Location:</b> Tanzania Mainland</span>
+                                        <span class="days-2"><b>Level:</b> Personal | Family | Group</span>
+                                        <span class="days-3">Destinations Visited:</span>
+                                        <p class="pkg-dest">Nungwi | Matemwe | Jambiani | Bwejuu | Nungwi | Mnemba | Kwenda | Kwale </p>
+                                        <div class="hide-identity-c" style="margin-top:15px;"> <span class="hide-info-but-c"></span> Read More</div>
+                                        <p class="pkg-info hide-identity-c-a">Join us for Skydive over the beautiful island of Zanzibar, add some adrenaline to your Holiday. With us you can enjoy the most coolest places in Zanzibar </p>
+                                    </div>
+                                    <div class="pkg-box-price"><span class="price blue-from"> From</span>
+                                        <span class="price pkg-price"> USD XXXX</span>
+                                        <span class="price pkg-price-pp"> Per Person Sharing</span>
+                                        <div class="pkg-button">
+                                            <a href="#zanzibarIsland" data-toggle="modal">Find Out More</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal HTML -->
+                                        <div id="zanzibarIsland" class="modal">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">ZANZIBAR ISLAND</h5>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>TELL ME WHAT TO PUT HERE </p>
+                                                <p class="text-primary"><small>TELL ME WHAT TO PUT HERE</small></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                    
+                                                <button type="button" class="btn btn-secondary" color="black" data-dismiss="modal">Close</button>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="pkg-box-wrapper">
+                                        <div class="pkg-box-pic">
+                                            <ul class="pkg-pic-countries">
+                                                <li>TANZANIA MAINLAND</li>
+                                                <li>ZANZIBAR ISLAND</li>
+                                            </ul>
+                                            <a href=""> <img src="img/bottom-part/culture.jpg" data-src="" alt="T11-00.jpg" class="hero-image lazyload" style = "width:100%; height:100%;" /></a>
+                                        </div>
+                                        <div class="pkg-box-text">
+                                            <h3><a href="" class="box-heading">Cultural and Historical Tours </a></h3>
+                                            <span class="days-2"><b>Location:</b> Tanzania Mainland | Zanzibar </span>
+                                            <span class="days-2"><b>Level:</b> Personal | Family | Group</span>
+                                            <span class="days-3">Destinations Visited:</span>
+                                            <p class="pkg-dest">Cape Town | Winelands | Garden Route | Sun City | Kruger National Park</p>
+                                            <div class="hide-identity-c" style="margin-top:15px;"> <span class="hide-info-but-c"></span> Read More</div>
+                                            <p class="pkg-info hide-identity-c-a">It is the ultimate South African golf tour, including only exclusive five-star accommodations and the most illustrious names in golf, from Fancourt in the Garden Route to Leopard Creek on the edge of Kruger National Park.</p>
+                                        </div>
+                                        <div class="pkg-box-price"><span class="price blue-from"> From</span>
+                                            <span class="price pkg-price"> USD XXXX</span>
+                                            <span class="price pkg-price-pp"> Per Person Sharing</span>
+                                            <div class="pkg-button">
+                                                <a href="thetourpage.com">Find Out More</a></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal HTML -->
+                                        <div id="zanzibarIsland" class="modal">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">ZANZIBAR ISLAND & TANZANIA MAINLAND</h5>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>TELL ME WHAT TO PUT HERE </p>
+                                                <p class="text-primary"><small>TELL ME WHAT TO PUT HERE</small></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                    
+                                                <button type="button" class="btn btn-secondary" color="black" data-dismiss="modal">Close</button>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="pkg-box-wrapper">
+                                        <div class="pkg-box-pic">
+                                            <ul class="pkg-pic-countries">
+                                                <li>TANZANIA MAINLAND</li>
+                                                <li>ZANZIBAR ISLAND</li>
+                                            </ul>
+                                            <a href=""> <img src="img/bottom-part/walking.jpg" data-src="" alt="T11-00.jpg" class="hero-image lazyload" style = "width:100%; height:100%;" /></a>
+                                        </div>
+                                        <div class="pkg-box-text">
+                                            <h3><a href="" class="box-heading">Walking Tour</a></h3>
+                                            <span class="days-2"><b>Location:</b> Tanzania Mainland | Zanzibar </span>
+                                            <span class="days-2"><b>Level:</b> Personal | Family | Group</span>
+                                            <span class="days-3">Destinations Visited:</span>
+                                            <p class="pkg-dest">Stone Town (Zanzibar) | The Old Fort,Ngome Kongwe (Zanzibar) | Forodhani Gardens (Zanzibar)| Christ Church Cathedral (Zanzibar) | Dar es salaam City Tour</p>
+                                            <div class="hide-identity-c" style="margin-top:15px;"> <span class="hide-info-but-c"></span> Read More</div>
+                                            <p class="pkg-info hide-identity-c-a">Find the best free walking tours in Dar es salaam and Zanzibar Island with our Tour Guiders</p>
+                                        </div>
+                                        <div class="pkg-box-price"><span class="price blue-from"> From</span>
+                                            <span class="price pkg-price"> USD XXXX</span>
+                                            <span class="price pkg-price-pp"> Per Person Sharing</span>
+                                            <div class="pkg-button">
+                                                <a href="thetourpage.com">Find Out More</a></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal HTML -->
+                                        <div id="zanzibarIsland" class="modal">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">ZANZIBAR ISLAND & TANZANIA MAINLAND</h5>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>TELL ME WHAT TO PUT HERE </p>
+                                                <p class="text-primary"><small>TELL ME WHAT TO PUT HERE</small></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                    
+                                                <button type="button" class="btn btn-secondary" color="black" data-dismiss="modal">Close</button>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                
+                <p class="class-align"></p>
+                <script type="534d03dca330cd06605f4b93-text/javascript">
+                    var currentPage = 1;
+                </script>
+                <script type="534d03dca330cd06605f4b93-text/javascript">
+                    if (typeof bindPkgExpanders === "function") {
+                        bindPkgExpanders();
+                    }
+                </script>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="country-options-container">
+
+
+<div class="country-options-c useful-box-bg-faq useful-box-bg">
+<h2 class="section-head">FREQUENTLY ASKED QUESTIONS</h2>
+<div class="content">
+    <div class="faq">
+        <span class="faq-span">
+        <span class="sprite sprite-icon_open-4 expand"></span> In what vehicles are theTOURpage  conducted? </span>
+        <div class="content_w-b">
+            <div class="content-b">All tours are conducted in comfortable air-conditioned vehicles. The vehicle type and size will vary depending on the size of your traveling party</div>
+        </div>
+        
+    </div>
+    <div class="faq">
+        <span class="faq-span">
+        <span class="sprite sprite-icon_open-4 expand"></span> Can tour days be switched out? </span>
+        <div class="content_w-b">
+            <div class="content-b">Yes - mainly when bad weather imposes on your activities. Should that be the case, you may substitute the itinerary with one less weather-dependent</div>
+        </div>
+    </div>
+    <div class="faq">
+        <span class="faq-span">
+        <span class="sprite sprite-icon_open-4 expand"></span>What is the best tourist destination in Tanzania?</span>
+        <div class="content_w-b">
+            <div class="content-b">Zanzibar is the cream of Tanzania tourist destinations, although there are many other tourist destination in Tanzania </div>
+        </div>
+    </div>
+    <div class="faq">
+        <span class="faq-span">
+        <span class="sprite sprite-icon_open-4 expand"></span> Are any tour activities scheduled? </span>
+        <div class="content_w-b">
+            <div class="content-b"> Clients can enjoy most activities at any time of the day. But specific tours - like Prison Island and Other Island Tours in Zanzibar for example - have set times. </div>
+        </div>
+    </div>
+    <div class="faq">
+        <span class="faq-span">
+        <span class="sprite sprite-icon_open-4 expand"></span> Can tour days be switched out? </span>
+        <div class="content_w-b">
+            <div class="content-b"> Yes - mainly when bad weather imposes on your activities. Should that be the case? Your day's itinerary may be switched out with one that is less weather-dependent.</div>
+        </div>
+    </div>
+    <div class="faq">
+        <span class="faq-span">
+        <span class="sprite sprite-icon_open-4 expand"></span> What if I have a special interest, like bird watching or rock art? </span>
+        <div class="content_w-b">
+            <div class="content-b"> Should you opt for one of our special interest tours or special interests like professional photography, birding, or even history, we will match you with a guide to enhance your experience..</div>
+        </div>
+    </div>
+    <div class="faq">
+        <span class="faq-span">
+        <span class="sprite sprite-icon_open-4 expand"></span> Do you have guides that speak foreign languages? </span>
+        <div class="content_w-b">
+            <div class="content-b"> We would never dream of limiting our services to English-speaking visitors only. Depending on the prevalence of the language and the availability of guides, additional fees may apply if we have to outsource a translator.</div>
+        </div>
+    </div>
+    <div class="faq">
+        <span class="faq-span">
+        <span class="sprite sprite-icon_open-4 expand"></span> I have already booked my accommodation. Do you offer guided tours without accommodation included? </span>
+        <div class="content_w-b">
+            <div class="content-b"> It mainly depends on the availability of guides. Guests booking complete private tour packages with theTOURpage will naturally take preference.</div>
+        </div>
+    </div>
+    <div class="faq">
+        <span class="faq-span">
+        <span class="sprite sprite-icon_open-4 expand"></span> What about tipping? </span>
+        <div class="content_w-b">
+            <div class="content-b"> Tipping is absolutely at your discretion. What may seem a negligible sum for you might be a fortune for another traveler, or vice versa, so tip according to your budget. Additionally, remember that a tip is not a right - if you
+            find the service lacking, be sure to communicate this to us. </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="country-options-b">
+
+        <div class = "footer-right">
+    
+        <ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;margin-top:10px;float:center;">
+                <li class="expanded-list" style="clear: both;"><img style="float: left;color:white;" src="img/icons/whatsap.PNG" alt="interactive connection" width="45" />theTOURpage </li>
+                <li class="expanded-list" style="clear: both;"><img style="float: left;" src="img/icons/instagram.PNG" alt="Word to html" width="45" /> theTOURpage</li>
+                <li class="expanded-list" style="clear: both;"><img style="float: left;" src="img/icons/facebook.PNG" alt="replace text" width="45" />theTOURpage</li>
+                <li class="expanded-list" style="clear: both;"><img style="float: left;" src="img/icons/email.PNG"  alt="html cleaner" width="45" /> info@thetourpage.com</li>
+                <li class="expanded-list" style="clear: both;"><img style="float: left;" src="img/icons/web.PNG"  alt="html cleaner" width="45" /> +255712626575  |  +255000000213</li>
+        </ol>   
+        </div> 
+</div>
+
+</div>
+
+<div class="footer-grey-dark">
+<div class="footerstick">
+<div class="countries-wrap">
+
+    
+</div>
+<div style="clear:both; width:100%;"></div>
+
+
+</div>
+</div>
+
+
+
+    
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" type="534d03dca330cd06605f4b93-text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" type="534d03dca330cd06605f4b93-text/javascript"></script>
+<script src="js/misc-scripts.js" defer type="534d03dca330cd06605f4b93-text/javascript"></script>
+<script src="js/lazysizes.min.js" async type="534d03dca330cd06605f4b93-text/javascript"></script>
+<script src="//lightbox.js" defer type="534d03dca330cd06605f4b93-text/javascript"></script>
+<script src="js/jquery.nice-select.js" type="534d03dca330cd06605f4b93-text/javascript"></script>
+<script src="src/skdslider.min.js" type="534d03dca330cd06605f4b93-text/javascript"></script>
+<script type="534d03dca330cd06605f4b93-text/javascript">
+jQuery(document).ready(function() {
+
+
+    jQuery('#demo').skdslider({
+        slideSelector: '.slide',
+        delay: 5000,
+        animationSpeed: 1000,
+        showNextPrev: true,
+        showPlayButton: false,
+        autoSlide: true,
+        animationType: 'sliding'
+    });
+});
+</script>
+<script type="534d03dca330cd06605f4b93-text/javascript">
+$(document).ready(function() {
+    $(".days-price-zar").each(function() {
+        let tourcode = $(this).data('tourcode');
+        let accomname = $(this).data('accomname');
+        if (tourcode)
+            $(this).load('/Classes/process?p=getPackagePrice', {
+                TourCode: tourcode
+            });
+        else if (accomname)
+            $(this).load('/Classes/process?p=getAccomPrice', {
+                TourCode: accomname
+            });
+    });
+});
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65bf2ce58d261e1b5f5c1c4f/1hlpcep9l';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+<!--End of Tawk.to Script-->
+
+
+<!--script for hide and display more info-->
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="534d03dca330cd06605f4b93-|49" defer>
+</script>
+
+</body>
+</html>

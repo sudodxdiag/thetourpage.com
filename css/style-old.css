@@ -1,0 +1,48 @@
+.hide-family {
+    display: none !important
+}
+
+
+.content-c ul li a:link,
+.content-c ul li a:visited,
+.content-c ul li a:hover {
+    text-decoration: none;
+    color: #375165
+}
+
+.hide-info-c {
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+.hide-identity-c {
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    color: #375165
+}
+
+.hide-identity-c-a {
+    display: none
+}
+
+.hide-info-but-c {
+    width: 25px;
+    height: 25px;
+    background-color: #375165;
+    margin: 0 5px 0 0;
+    float: left;
+    padding: 0;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-position: -121px -238px;
+    border-radius: 2px
+}
+
+
